@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>723595600268-nha2149lc88gvfjhr88nfkil07tfo5mb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.723595600268-nha2149lc88gvfjhr88nfkil07tfo5mb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAOSaAyoVvxB-kQAHyQDI08-IbVruF95Hc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>723595600268</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>whathub.whatsapp</string>
+	<key>PROJECT_ID</key>
+	<string>isbulapp-94eaa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>isbulapp-94eaa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:723595600268:ios:3a8e0bc463f56ebb9eb6a9</string>
+</dict>
+</plist>

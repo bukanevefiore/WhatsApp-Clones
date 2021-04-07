@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "723595600268",
+    "project_id": "isbulapp-94eaa",
+    "storage_bucket": "isbulapp-94eaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723595600268:android:1efd338cc331195c9eb6a9",
+        "android_client_info": {
+          "package_name": "com.examp.bildirimdeneme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723595600268-je4p18bo5n3dcmle0neauvh2mmonfpbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYwTuvkpuoiy1yDIYID2vi3zxSxJdkwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723595600268-je4p18bo5n3dcmle0neauvh2mmonfpbv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "723595600268-nha2149lc88gvfjhr88nfkil07tfo5mb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "whathub.whatsapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723595600268:android:e803238272ad5e709eb6a9",
+        "android_client_info": {
+          "package_name": "whathub.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723595600268-je4p18bo5n3dcmle0neauvh2mmonfpbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcYwTuvkpuoiy1yDIYID2vi3zxSxJdkwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723595600268-je4p18bo5n3dcmle0neauvh2mmonfpbv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "723595600268-nha2149lc88gvfjhr88nfkil07tfo5mb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "whathub.whatsapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
