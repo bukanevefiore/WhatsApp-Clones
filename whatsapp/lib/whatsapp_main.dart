@@ -29,33 +29,59 @@ class _WhatsAppMainState extends State<WhatsAppMain> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("WhatsApp Clone"),
-        bottom: TabBar(
-          controller: _tabController,
-          tabs: <Widget>[
-            Tab(
-              icon: Icon(Icons.camera),
+      body: Container(
+        color: Theme.of(context).primaryColor,
+        child: SafeArea(
+          child: NestedScrollView(
+            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+              return [
+                SliverAppBar(
+                  floating: true,
+                  title: Text("Whatsapp Clone"),
+                  actions: <Widget>[
+                    IconButton(icon: Icon(Icons.search), onPressed: () {} ),
+                    IconButton(icon: Icon(Icons.more_vert), onPressed: () {} ),
+                  ],
+                )
+              ];
+            },
+            body: Column(
+              children: <Widget>[
+               TabBar(
+                    controller: _tabController,
+                    tabs: <Widget>[
+                      Tab(
+                        icon: Icon(Icons.camera),
+                      ),
+                      Tab(
+                        text: "Chats",
+                      ),
+                      Tab(text: "Status",),
+                      Tab(text: "Call",),
+                    ],
+                  ),
+
+                Expanded(
+                  child: Container(
+                    color: Colors.white,
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: <Widget>[
+                        CameraPage(),
+                        ChatsPage(),
+                        StatusPage(),
+                        CallsPage(),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
-            Tab(
-              text: "Chats",
-            ),
-            Tab(text: "Status",),
-            Tab(text: "Call",),
-          ],
+          ),
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: <Widget>[
-        CameraPage(),
-        ChatsPage(),
-        StatusPage(),
-        CallsPage(),
-        ],
-      ),
       floatingActionButton: showMessage ? FloatingActionButton(
-        child: Icon(Icons.message),
+        child: Icon(Icons.message,color: Colors.white),
         onPressed: () {},
       ) : null,
     );
