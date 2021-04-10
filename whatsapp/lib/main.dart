@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/src/projeler/WhatsApp-Clones/whatsapp/lib/core/services/locator.dart';
+import 'package:whatsapp/core/locator.dart';
 import 'package:whatsapp/whatsapp_main.dart';
 
 void main() {

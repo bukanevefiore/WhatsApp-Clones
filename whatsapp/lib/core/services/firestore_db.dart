@@ -14,6 +14,7 @@ class FirestoreDB {
     // query mizi conversation listemize çevirme
     // return tipimizi query snapshot a döndürme
     return referance.snapshots().map((list) =>
-    list.docs.map((snapshot) => Conversation.fromSnapshot(snapshot)));
+    list.docs.map((snapshot) => Conversation.fromSnapshot(snapshot))
+    .toList());
   }
 }
