@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:whatsapp/models/conversations.dart';
 
 
-class FirestoreDB {
+class ChatService {
   final FirebaseFirestore _firestore=FirebaseFirestore.instance;
 
   Stream<List<Conversation>> getConversations(String userId) {
