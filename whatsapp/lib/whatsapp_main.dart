@@ -1,8 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:whatsapp/core/locator.dart';
 import 'package:whatsapp/screens/calls_page.dart';
 import 'package:whatsapp/screens/camera_page.dart';
 import 'package:whatsapp/screens/chats_page.dart';
+import 'package:whatsapp/screens/contacts_page.dart';
 import 'package:whatsapp/screens/status_page.dart';
+import 'package:whatsapp/viewmodels/main_model.dart';
 
 class WhatsAppMain extends StatefulWidget {
   @override
@@ -28,6 +32,8 @@ class _WhatsAppMainState extends State<WhatsAppMain> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+   Firebase.initializeApp();
+   var model = getIt<MainModel>();
     return Scaffold(
       body: Container(
         color: Theme.of(context).primaryColor,
@@ -70,7 +76,7 @@ class _WhatsAppMainState extends State<WhatsAppMain> with SingleTickerProviderSt
                         CameraPage(),
                         ChatsPage(),
                         StatusPage(),
-                        CallsPage(),
+                        ContactsPage(),//CallsPage(),
                       ],
                     ),
                   ),
@@ -82,7 +88,10 @@ class _WhatsAppMainState extends State<WhatsAppMain> with SingleTickerProviderSt
       ),
       floatingActionButton: showMessage ? FloatingActionButton(
         child: Icon(Icons.message,color: Colors.white),
-        onPressed: () {},
+        onPressed: () async {
+          //await model.navigateToContacts();
+          await model.navigateToContacts();
+          },
       ) : null,
     );
   }

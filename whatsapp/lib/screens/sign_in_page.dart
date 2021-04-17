@@ -38,7 +38,8 @@ class SignInPage extends StatelessWidget {
                   ),
                   RaisedButton(
                     child: Text('Sign In'),
-                    onPressed: () async => await model.signIn(editingController.text),
+                    onPressed: () async =>
+                    await model.signIn(editingController.text),
                   ),
                 ],),
             ),
